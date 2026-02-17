@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexPlanet | Task-2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <h2>ApexPlanet Task-2</h2>
+    </nav>
+
+   
+    <section class="hero">
+        <h1>Web Development Internship</h1>
+        <p>Contact Form & To-Do List Using HTML,CSS and JavaScript</p>
+        <a href="#main" class="cta-btn">Explore Project</a>
+    </section>
+
+   
+    <section id="main" class="main">
+
+        <!-- Contact Form -->
+        <div class="card">
+            <h3>Contact Form</h3>
+
+            <form id="contactForm">
+
+                <div class="field">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <small id="nameError"></small>
+                </div>
+
+                <div class="field">
+                    <input type="email" id="email" placeholder="Your Email">
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="field">
+                    <textarea id="message" placeholder="Your Message"></textarea>
+                    <small id="msgError"></small>
+                </div>
+
+                <button type="submit" class="primary-btn">Send Message</button>
+
+            </form>
+        </div>
+
+        <!-- To-Do List -->
+        <div class="card">
+            <h3>To-Do List</h3>
+
+            <div class="todo-input">
+                <input type="text" id="taskInput" placeholder="Add new task">
+                <button onclick="addTask()" class="primary-btn small-btn">Add</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 ApexPlanet Internship Project | Designed by Bhavesh Kirtankar 🚀</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
